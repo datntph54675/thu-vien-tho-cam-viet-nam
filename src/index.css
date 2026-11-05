@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+:root {
+  /* Hệ thống màu sắc lấy cảm hứng từ thổ cẩm Việt Nam */
+  --color-cham-dam: #20252b;
+  --color-cham-den: #15191d;
+  --color-do-son: #a83232;
+  --color-do-dat: #783b32;
+  --color-vang-nghe: #d5a642;
+  --color-vang-nhat: #f0dca7;
+  --color-trang-nga: #f7f2e8;
+  --color-vai-lanh: #e9dfcc;
+  --color-nau-dat: #6f5544;
+  --color-text-light-bg: #29251f;
+  --color-text-dark-bg: #f7f2e8;
+}
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--color-trang-nga);
+    color: var(--color-text-light-bg);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.font-serif-culture {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Thang kích thước typography chuẩn hóa */
+.text-hero {
+  font-size: clamp(2.5rem, 4.5vw, 4.25rem);
+  line-height: 1.18;
+}
+
+.text-page-title {
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 1.22;
+}
+
+.text-section-title {
+  font-size: clamp(1.65rem, 2.5vw, 2.25rem);
+  line-height: 1.28;
+}
+
+.text-card-title {
+  font-size: clamp(1.2rem, 1.4vw, 1.4rem);
+  line-height: 1.32;
+}
+
+.text-body-main {
+  font-size: 1.03125rem;
+  line-height: 1.72;
+}
+
+.text-body-sub {
+  font-size: 0.90625rem;
+  line-height: 1.68;
+}
+
+.text-caption-fine {
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}
+
+/* Đường viền thổ cẩm dệt mảnh ở mép trên */
+.brocade-border-ribbon {
+  background: repeating-linear-gradient(
+    90deg,
+    #a83232 0px,
+    #a83232 12px,
+    #d5a642 12px,
+    #d5a642 24px,
+    #20252b 24px,
+    #20252b 36px,
+    #783b32 36px,
+    #783b32 48px,
+    #f7f2e8 48px,
+    #f7f2e8 60px
+  );
+  height: 4px;
+}
+
+/* Container chuẩn 1240px */
+.content-container {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .content-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .content-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}

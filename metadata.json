@@ -1,0 +1,6 @@
+{
+  "name": "Thư viện Hoa văn Thổ cẩm Việt Nam",
+  "description": "Thư viện số độc lập lưu trữ, tra cứu và bảo tồn hoa văn thổ cẩm truyền thống của các dân tộc Việt Nam.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
